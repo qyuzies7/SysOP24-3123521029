@@ -81,7 +81,7 @@
    $ nano fork02.cpp
    ```
    
-  <img width="279" alt="image" src="https://github.com/qyuzies7/SysOP24-3123521029/assets/149217967/bf2a58f2-6a29-49c5-b034-03f5665b935d">
+    <img width="279" alt="image" src="https://github.com/qyuzies7/SysOP24-3123521029/assets/149217967/bf2a58f2-6a29-49c5-b034-03f5665b935d">
 
 - inputkan source code fork02.cpp seperti dibawah ini
   <img width="494" alt="image" src="https://github.com/qyuzies7/SysOP24-3123521029/assets/149217967/7ea96a10-b8cf-446e-9f5a-9f81e94ca883">
