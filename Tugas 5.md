@@ -146,7 +146,7 @@
     
   <img width="273" alt="image" src="https://github.com/qyuzies7/SysOP24-3123521029/assets/149217967/858285e5-7a9a-43aa-a271-e79de847d6d4">
 
-## Producer - Consumer prooblem 
+## Producer - Consumer problem 
 Masalah Produsen-Konsumen adalah sebuah masalah klasik dalam sinkronisasi multi-proses dalam sistem operasi, yang berkaitan dengan penggunaan sumber daya bersama seperti buffer. Dalam masalah ini, terdapat sebuah buffer dengan ukuran tertentu yang digunakan oleh seorang produsen untuk memasukkan item ke dalamnya, dan oleh seorang konsumen untuk mengeluarkan item dari buffer tersebut. Masalah utamanya adalah mencegah produsen memasukkan item ke dalam buffer saat buffer sudah penuh, serta mencegah konsumen mengeluarkan item dari buffer saat buffer kosong.
 
 Untuk mengatasi masalah tersebut, konsep semaphores digunakan. Semaphore adalah tipe data variabel atau abstrak yang digunakan untuk mengontrol akses ke sumber daya bersama oleh beberapa proses dalam sistem bersamaan. Dalam implementasi kode menggunakan bahasa C, semaphore digunakan untuk mengatur akses ke buffer, sehingga hanya satu proses (produsen atau konsumen) yang dapat mengakses buffer pada satu waktu.
