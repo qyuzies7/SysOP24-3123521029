@@ -146,6 +146,17 @@
     
   <img width="273" alt="image" src="https://github.com/qyuzies7/SysOP24-3123521029/assets/149217967/858285e5-7a9a-43aa-a271-e79de847d6d4">
 
+## Producer - Consumer prooblem 
+Masalah Produsen-Konsumen adalah sebuah masalah klasik dalam sinkronisasi multi-proses dalam sistem operasi, yang berkaitan dengan penggunaan sumber daya bersama seperti buffer. Dalam masalah ini, terdapat sebuah buffer dengan ukuran tertentu yang digunakan oleh seorang produsen untuk memasukkan item ke dalamnya, dan oleh seorang konsumen untuk mengeluarkan item dari buffer tersebut. Masalah utamanya adalah mencegah produsen memasukkan item ke dalam buffer saat buffer sudah penuh, serta mencegah konsumen mengeluarkan item dari buffer saat buffer kosong.
+
+Untuk mengatasi masalah tersebut, konsep semaphores digunakan. Semaphore adalah tipe data variabel atau abstrak yang digunakan untuk mengontrol akses ke sumber daya bersama oleh beberapa proses dalam sistem bersamaan. Dalam implementasi kode menggunakan bahasa C, semaphore digunakan untuk mengatur akses ke buffer, sehingga hanya satu proses (produsen atau konsumen) yang dapat mengakses buffer pada satu waktu.
+
+Dalam kode contoh yang diberikan, terdapat implementasi masalah Produsen-Konsumen dengan satu produsen dan satu konsumen, serta dengan satu produsen dan tiga konsumen. Setiap proses (baik produsen maupun konsumen) diimplementasikan sebagai sebuah thread, dan semaphore digunakan untuk mengontrol akses ke buffer.
+
+Dalam implementasi dengan satu produsen dan satu konsumen, terdapat sebuah buffer dengan ukuran satu, sedangkan dalam implementasi dengan satu produsen dan tiga konsumen, buffer dengan ukuran satu juga digunakan, dan konsumen mengonsumsi item dari buffer sesuai dengan pembagian yang sudah ditentukan.
+
+Dengan menggunakan semaphore dan mutex lock, masalah sinkronisasi antara produsen dan konsumen dapat diatasi dengan baik, sehingga menghindari terjadinya kondisi balapan (race condition) dan masalah bagian kritis (critical section problem). Dengan demikian, masalah Produsen-Konsumen dapat dipecahkan dengan efektif dalam lingkungan pemrograman thread seperti dalam bahasa C.
+
 
 
 
