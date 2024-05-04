@@ -1,5 +1,5 @@
-# TUGAS 3
-## 1. Siklus CPU (Fetch, Decode, Execute)
+
+# 1. Siklus CPU (Fetch, Decode, Execute)
 - Fetch : CPU mengambil instruksi program dari memori utama, Instruksi berikutnya diambil dari alamat memori yang tersimpan dalam Program Counter(PC), dan disimpan dalam Instruction Regrister(IR).
 - Decode : CPU menerjemahkan instruksi menjadi operasi yang mudah dipahami dan memecah instruksi menjadi bagian-bagian yang sederhana.
 - Execute : CPU menjalankan instruksi yang telah didecode sebelumnya.
@@ -65,7 +65,11 @@ Sebagai alat untuk menerjemahkan source code dari bahasa pemrograman tingkat tin
 ### Peran Sistem operasi 
 Peran sistem operasi sebagai pengelola sumber daya utama dalam sebuah sistem komputer meliputi alokasi dan pengaturan CPU, memori, perangkat input/output, dan penyimpanan.
 
-## 3. Melakukan clone
+
+
+
+# 2. Flops - Iops
+## Melakukan clone
 
 ![Screenshot 2024-03-18 042235](https://github.com/qyuzies7/SysOP24-3123521029/assets/149217967/f6e1522c-2845-445b-8958-0cb9451ae8cb)
 
