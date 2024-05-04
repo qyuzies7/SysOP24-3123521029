@@ -1,30 +1,11 @@
-## Perbedaan RISC dan CISC
-- Reduced Instruction Set Computing (RISC) adalah arsitektur komputer yang  memiliki banyak komponen, namun instruksinya relatif sedikit(sederhana).
-  Dalam arsitektur ini setiap instruksi memiliki waktu eksekusi yang konstan.
-  
-  Kelebihan arsitektur RISC adalah performa yang cepat, karena setiap instruksi memiliki waktu eksekusi yang konstan.
-  Arsitektur RISC juga memiliki kompleksitas yang lebih rendah, sehingga lebih mudah untuk diperbaiki jika terjadi kesalahan dalam sistem.
-  Selain itu, RISC juga dapat menghasilkan kode yang lebih ringkas, sehingga dapat mengurangi ukuran program dan mempercepat waktu eksekusi.
 
-  Kekurangan dari arsitektur RISC adalah kurangnya fleksibilitas dalam penggunaan instruksi-instruksi yang lebih kompleks.
-  Beberapa tugas yang membutuhkan instruksi yang lebih kompleks harus dipecah menjadi beberapa instruksi sederhana, yang dapat memperpanjang waktu eksekusi.
-
-- Complex Instruction Set Computing (CISC) adalah arsitektur komputer yang memiliki sedikit komponen, namun menggunakan instruksi-instruksi yang lebih kompleks dan beragam untuk melakukan tugas-tugas tertentu.
-
-  Kelebihan arsitektur CISC adalah kemampuan untuk menjalankan instruksi-instruksi yang lebih kompleks, sehingga memungkinkan tugas-tugas yang lebih kompleks dapat dilakukan dengan lebih cepat.
-  CISC juga dapat melakukan tugas-tugas yang lebih banyak dalam satu instruksi, sehingga dapat mempercepat waktu eksekusi dan mengurangi jumlah instruksi yang dibutuhkan
-
-  Kekurangan dari arsitektur CISC adalah arsitektur CISC yang cenderung lebih kompleks dibandingkan dengan arsitektur RISC dapat mempengaruhi kecepatan eksekusi program dan meningkatkan risiko kesalahan pada sistem.
-  Karena kompleksitasnya yang tinggi, arsitektur CISC cenderung membutuhkan lebih banyak ruang pada memori, sehingga memori menjadi lebih terbatas dan kurang efisien.
-  Meskipun arsitektur CISC dapat menjalankan instruksi yang kompleks, namun arsitektur ini kurang fleksibel dalam hal modifikasi dan pengembangan sistem.
-
-## Hubungan Arsitektur CPU dengan Arsitektur OS
+# Hubungan Arsitektur CPU dengan Arsitektur OS
    Hubungan antara arsitektur CPU dan arsitektur OS sangat penting karena arsitektur CPU menetapkan batasan dan kemampuan perangkat keras yang dapat dimanfaatkan oleh sistem operasi dalam menjalankan tugas-tugasnya.
    CPU menentukan instruksi-instruksi yang dapat dieksekusi, cara akses memori, dan interaksi dengan perangkat I/O. Sementara itu, sistem operasi bertindak sebagai perantara antara aplikasi dan perangkat keras,
    mengelola sumber daya seperti memori dan CPU, serta menyediakan antarmuka yang diperlukan bagi pengguna untuk berinteraksi dengan sistem. 
    Hal tersebut menciptakan sebuah situasi di mana aplikasi dapat berjalan secara efisien dan diatur oleh sistem operasi sesuai dengan kemampuan serta batasan yang ditetapkan oleh arsitektur CPU.
 
-## Fork : Parent - Child Process
+# Fork : Parent - Child Process
 
 - Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
   
@@ -102,7 +83,7 @@
   
   Keterangan : Program ini menampilkan PID dan nilai dari variabel x. program ini melakukan proses looping dan untuk menghentikannya ketik ctrl + c
 
-## Orphan dan Zombie
+# Orphan dan Zombie
 
 - Sebelum menjalankan orphan, masuk pada teks editor dengan cara seperti fork01 dan fork02
   ```
@@ -146,7 +127,7 @@
     
   <img width="273" alt="image" src="https://github.com/qyuzies7/SysOP24-3123521029/assets/149217967/858285e5-7a9a-43aa-a271-e79de847d6d4">
 
-## Producer - Consumer problem 
+# Producer - Consumer problem 
 Masalah Produsen-Konsumen adalah sebuah masalah klasik dalam sinkronisasi multi-proses dalam sistem operasi, yang berkaitan dengan penggunaan sumber daya bersama seperti buffer. Dalam masalah ini, terdapat sebuah buffer dengan ukuran tertentu yang digunakan oleh seorang produsen untuk memasukkan item ke dalamnya, dan oleh seorang konsumen untuk mengeluarkan item dari buffer tersebut. Masalah utamanya adalah mencegah produsen memasukkan item ke dalam buffer saat buffer sudah penuh, serta mencegah konsumen mengeluarkan item dari buffer saat buffer kosong.
 
 Untuk mengatasi masalah tersebut, konsep semaphores digunakan. Semaphore adalah tipe data variabel atau abstrak yang digunakan untuk mengontrol akses ke sumber daya bersama oleh beberapa proses dalam sistem bersamaan. Dalam implementasi kode menggunakan bahasa C, semaphore digunakan untuk mengatur akses ke buffer, sehingga hanya satu proses (produsen atau konsumen) yang dapat mengakses buffer pada satu waktu.
